@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
   color: #000;
-  font-family: "Poppins", sans-serif;
+  font: 14px "Poppins", sans-serif;
 }
 
 .container {
@@ -13,20 +13,21 @@ body {
 .header {
   background-color: #F1F1F1;
 }
-.header-nav {
+.header__nav {
+  margin-bottom: 76px;
   padding-top: 46px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.header-logo {
+.header__logo {
   position: relative;
   padding: 0 12px 0 0;
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
 }
-.header-logo::after {
+.header__logo::after {
   content: "";
   position: absolute;
   right: 0;
@@ -36,6 +37,24 @@ body {
   height: 8px;
   background-color: #FDA300;
   border-radius: 50%;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.header__content {
+  margin-top: 124px;
+  max-width: 500px;
+}
+.header__title-h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 66px;
+}
+.header__text {
+  line-height: 2;
 }
 
 .nav {
@@ -50,9 +69,11 @@ body {
   line-height: 21px;
 }
 .nav__link {
-  font-size: 14px;
   font-weight: 500;
   transition: color 0.5s;
+}
+.nav__link.active {
+  color: #606060;
 }
 .nav__link:hover {
   color: #FDA300;
