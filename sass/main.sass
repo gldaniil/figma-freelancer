@@ -1,0 +1,53 @@
+@import 'fonts', 'colors'
+
+body
+  color: $black
+  font-family: $main-font
+
+.container
+  margin: 0 auto
+  padding: 0 30px
+  max-width: 1170px + 60px
+
+// Header
+
+.header
+  background-color: $white
+  &-nav
+    padding-top: 46px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-logo
+    position: relative
+    padding: 0 12px 0 0
+    font-weight: 700
+    font-size: 32px
+    line-height: 1
+    
+    &::after
+      content: ""
+      position: absolute
+      right: 0
+      bottom: 0
+      display: block
+      width: 8px
+      height: 8px
+      background-color: $orange
+      border-radius: 50%
+
+.nav
+  margin-left: auto
+  &__list
+    display: flex
+    justify-content: space-between
+    column-gap: 50px
+  &__item
+    line-height: 21px
+  &__link
+    font-size: 14px
+    font-weight: 500
+    transition: color .5s
+    &:hover
+      color: $orange
+
